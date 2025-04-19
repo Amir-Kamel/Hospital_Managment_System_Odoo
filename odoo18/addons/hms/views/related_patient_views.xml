@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record id="action_related_patients" model="ir.actions.act_window">
+            <field name="name">Related Patients</field>
+            <field name="res_model">res.partner</field>
+            <field name="domain">[('related_patient_id', '!=', False)]</field>
+        </record>
+
+
+        <record id="view_partner_form_inherit_patient" model="ir.ui.view">
+            <field name="name">res.partner.form.inherit.patient</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='sales_purchases']//group[@name='misc']" position="inside">
+                    <field name="related_patient_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <menuitem id="hms_menu_root" name="HMS"/>
+        <menuitem id="ITI_management_system_menu" parent="hms_menu_root" name="Management System"/>
+        <menuitem id="hms_menu_related_patients" parent="ITI_management_system_menu" name="Related Patients" action="action_related_patients"/>
+    </data>
+</odoo>

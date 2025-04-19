@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+**/*venv*/
+venv/
+env/
+ENV/
+.venv/
+.env/
+odoo18/odoo18-venv/
+
+
+# Odoo config files (optional, if you don’t want to share them)
+*.log
+*.db
+*.conf
+
+# Node stuff (if using npm/yarn for themes or frontend)
+node_modules/
+dist/
+build/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Backup files
+*.bak
+*.tmp
+*~
+
+# Python environment settings
+pip-log.txt
+pip-delete-this-directory.txt
