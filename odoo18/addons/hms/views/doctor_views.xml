@@ -35,7 +35,7 @@
 
     <menuitem id="hms_menu_root" name="HMS"/>
     <menuitem id="ITI_management_system_menu" parent="hms_menu_root" name="Management System"/>
-    <menuitem id="hms_menu_doctors" parent="ITI_management_system_menu" name="Doctors" action="action_doctor" groups="hms.group_hms_manager"/>
+    <menuitem id="hms_menu_doctors" parent="ITI_management_system_menu" name="Doctors" action="action_doctors" groups="hms.group_hms_manager"/>
 
     </data>
 </odoo>

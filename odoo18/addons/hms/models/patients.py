@@ -6,6 +6,7 @@ import re
 class HmsPatient(models.Model):
     _name = 'hms.patient'
     _rec_name = 'first_name'
+    #_log_access = True
 
     first_name = fields.Char(required=True)
     last_name = fields.Char(required=True)

@@ -58,7 +58,7 @@
                             </page>
 
                             <page string="Doctor">
-                                <field name="doctor_ids" options="{'no_create': True}" readonly="readonly_doctors" groups="hms.group_hms_manager/>
+                                <field name="doctor_ids" options="{'no_create': True}" readonly="readonly_doctors" groups="hms.group_hms_manager"/>
                             </page>
 
                             <page string="Log History">
@@ -82,3 +82,9 @@
         <menuitem id="hms_menu_patients" parent="ITI_management_system_menu" name="Patients" action="action_patients"/>
     </data>
 </odoo>
+
+<!--    <menuitem id="sale_menu_root"-->
+<!--        name="Sales"-->
+<!--        web_icon="sale_management,static/description/icon.png"-->
+<!--        active="False"-->
+<!--        sequence="30">-->
